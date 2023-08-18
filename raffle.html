@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musemind</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="paginas">
+                <a class="Home" href="./index.html">Home</a>
+                <a class="about" href="aboutUs.html">aboutUs</a>
+                <a class="contact" href="contact.html">contact</a>
+                <a href="benefitsAndTips.html">Benefits</a>
+                <a href="moreInformation.html">More Information</a>
+                <a href="#">Raffle</a>
+            </div>
+            <div>
+                <img src="./assets/logo.png" alt="" width="80px">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="preForm">
+            <div class="mapContainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.8829035894!2d-118.74139121920591!3d34.02003921670767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1692342705566!5m2!1ses!2sco"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="formulario">
+                <form action="show_data.html" method="get">
+                    <label for="first name">first name</label>
+                    <input type="text" id="name" name="nombre">
+                    <label for="last name"> last name</label>
+                    <input type="text" id="last name" name="apellido">
+
+                    <label for="theme-sleccionado">choose theme art</label>
+                    <select name="theme art" id="theme seleccionado">
+                        <option value="">surreal art</option>
+                        <option value="selection-art">sureal art</option>
+                        <option value="selection-art">Expressionism </option>
+                    </select>
+                    <br>
+                    <label for="fecha">date</label>
+                    <input type="date" name="date">
+
+                    <h3>Payment Options</h3>
+
+                    <label for="paymant option">Cash
+                        <input type="radio" name="Payment Option">
+                    </label>
+
+                    <label for="paymant option">Credit Card
+                        <input type="radio" name="Payment Option">
+                    </label>
+
+                    <label for="paymant option">Debit Card
+                        <input type="radio" name="Payment Option">
+                    </label>
+
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                    <label>
+                        <input class="submit" type="submit">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Esta pagina fue creada por Cristian Lamadrid </h4>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    
+}
+main{
+    background-color: rgb(240, 209, 226);
+    min-height: 72vh;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    background-color:rosybrown
+}
+nav a{
+    margin-left: 0;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.paginas{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+
+
+h1,h2{
+    text-align: center;
+}
+
+h4{
+    padding: 2rem;
+    text-align: center;
+    background-color: rosybrown;
+
+}
+
+
+.f1{
+    margin-left: 45rem;
+    padding: 2rem
+
+}
+
+
+#logo{
+    background-color: rosybrown;
+    
+}
+
+.texto_inicial{
+    width: 100%;
+    text-align: left;
+}
+
+.contendorFoto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px;  
+}
+.foto1{
+    width: 900px;
+    height: 400px;
+}
+
+.contenedorText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+
+.textoDentroIq{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoDentroIq h3{
+    width: 50%;
+}
+
+.foto2div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.foto2{
+    height: 300px;
+    width: 400px;
+}
+/*aboutUS*/
+.aboutPt1{
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sizeImage{
+    width: 200px;
+    height: 200px;
+
+}
+.aboutPt1 p{
+    width: 200px;
+}
+
+/*Benefits*/
+.benefitsConetnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.izquierda div{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.derecha div{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+li{
+    font-size: 20px;
+}
+.spaceList{
+    padding-bottom: 40px;
+}
+.textList{
+    font-size: 30px;
+}
+/*more Information*/
+
+caption{
+    color: rosybrown;
+    font-family: cursive;
+    font-weight: 200;
+ }
+
+
+table,th,tr,td{
+    font-size: large;
+    font-family: cursive;
+    text-align: center;
+    color: black;
+    border: 4px solid white;
+    border-collapse: collapse;
+}
+
+.tableLine{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*more information*/
+.formulario{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+}
+.preForm{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario form input , .formulario form textarea, .formulario form option, .formulario form select{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+iframe{
+    width: 300px;
+    height: 300px;
+}
+
+.mapContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+/*media queryssss*/
+@media screen and (max-width: 768px) {
+    .foto1 {
+    width: 70%;
+    height: 200px; 
+    }
+   
+    .contenedorText{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto2div{
+        order:-1 ;
+    }
+    .foto2{
+        width: 100%;
+        height: 200px;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+    .paginas{
+        text-align: center;
+        flex-direction: column;
+        order: 1;
+     ;
+    }
+    .derecha{
+        flex-direction: column;
+    }
+    .izquierda{
+        flex-direction: column;
+    }
+    .preForm{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapContainer{
+        order: 1;
+    }
+
+  }
+
+  @media screen and (max-width: 320px){
+
+    .aboutPt1{
+        flex-direction: column;
+
+    }
+  }
